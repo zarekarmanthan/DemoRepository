@@ -10,11 +10,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(-movSpeed*Time.deltaTime,0, 0);
         }
-       else if( Input.GetKeyDown(KeyCode.D))
+       else if( Input.GetKey(KeyCode.D))
         {
             transform.Translate(movSpeed * Time.deltaTime, 0, 0);
         }
